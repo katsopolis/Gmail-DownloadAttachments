@@ -1,6 +1,4 @@
-# Gmail - Download Attachments (Chromium Extension)
-
-# <img src="sources/icon.png" width="35" height="35"/> Playnite-SeriesCleaner
+# <img src="sources/icon.png" width="35" height="35"/> Gmail - Download Attachments (Chromium Extension)
 
 ## 🚀 What's this extension?
 A Gmail extension for Chromium browsers that allows to download all files separately in the mail with an integrated download icon.
