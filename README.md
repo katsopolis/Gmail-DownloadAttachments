@@ -3,7 +3,7 @@
 # <img src="sources/icon.png" width="35" height="35"/> Playnite-SeriesCleaner
 
 ## 🚀 What's this extension?
-A Gmail extension for Chromium browsers that allows to download all files in the mail with an integrated button.
+A Gmail extension for Chromium browsers that allows to download all files separately in the mail with an integrated download icon.
 
 ## 🛠️ How does it work?
 - Simply puts a button to download attachments next to Drive icon.
