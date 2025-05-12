@@ -19,8 +19,7 @@ A Gmail extension for Chromium browsers that allows to download all files in the
 - Click on it and see the magic.
 
 ## 🖼️ SS's
-![Alt text](images/screenshot1.png?raw=true "From Main Menu")
-![Alt text](images/screenshot2.png?raw=true "After Clicking")
+![Alt text](img/screenshot1.png?raw=true "Batch Download Icon")
 
 ## ⚠️ Disclaimer
 **The author is not responsible for any problem according to this extension.**  
