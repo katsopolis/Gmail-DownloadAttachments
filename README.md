@@ -1,4 +1,4 @@
-# <img src="sources/icon.png" width="35" height="35"/> Gmail - Download Attachments (Chromium Extension)
+# <img src="img/logo_128.png" width="35" height="35"/> Gmail - Download Attachments (Chromium Extension)
 
 ## 🚀 What's this extension?
 A Gmail extension for Chromium browsers that allows to download all files in the mail with an integrated button.
