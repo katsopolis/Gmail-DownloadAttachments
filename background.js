@@ -37,25 +37,23 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
     chrome.downloads.download({
       url: url,
-      filename: filename, 
+      filename: filename,
       saveAs: false,
       conflictAction: 'uniquify'
     }, (downloadId) => {
-      if (chrome.runtime.lastError) {
-        console.error(`'${filename}' indirme hatası:`, chrome.runtime.lastError);
-        // Hata durumunda içerik betiğine bilgi gönderilebilir (opsiyonel)
-        // sendResponse({ status: 'error', message: chrome.runtime.lastError.message });
+      if (chrome.runtime.lastError || typeof downloadId === 'undefined') {
+        const errMsg = chrome.runtime.lastError ? chrome.runtime.lastError.message : 'unknown error';
+        console.error(`'${filename}' indirme hatası:`, errMsg);
+        sendResponse({ status: 'error', message: errMsg });
       } else {
         console.log(`'${filename}' indirme işlemi başladı, ID:`, downloadId);
-        // Başarı durumunda içerik betiğine bilgi gönderilebilir (opsiyonel)
-        // sendResponse({ status: 'success', downloadId: downloadId });
+        sendResponse({ status: 'success', downloadId: downloadId });
       }
     });
 
-    // İndirme işlemi asenkron olduğu için hemen yanıt vermek yerine
-    // true döndürerek yanıtın daha sonra gönderileceğini belirtiyoruz.
-    // Ancak şimdilik doğrudan yanıt göndermiyoruz.
-    return true; 
+    // İndirme işlemi asenkron, yanıt callback içinde gönderiliyor.
+    // sendResponse çağrıldığı için true döndürüyoruz.
+    return true;
   }
 });
 
