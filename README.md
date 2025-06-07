@@ -28,5 +28,12 @@ A Gmail extension for Chromium browsers that allows to download all files in the
 **Q:** Some files like .jpg converts itself to .png randomly, why?
 **A:** I don't really know but it didn't bother me.
 
+## 🧪 Tests
+Run the unit tests with Node:
+
+```bash
+node tests/util.test.js
+```
+
 ## 📃 License
 This project is released under the MIT License.
