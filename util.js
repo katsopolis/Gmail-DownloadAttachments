@@ -144,3 +144,12 @@ function dispatchEvent(element, event, type) {
     element.fireEvent('on' + event.eventType, event);
   }
 }
+
+// Export for Node.js testing environment
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    stripUrl,
+    getFilenameFromUrl,
+    removeUrlImageParameters,
+  };
+}
