@@ -61,5 +61,5 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
 // İsteğe bağlı: Uzantı kurulumunda veya başlangıcında yapılacak işlemler
 chrome.runtime.onInstalled.addListener(() => {
-  console.log('Better Download All Attachments uzantısı kuruldu/güncellendi.');
+  console.log('Gmail - Attachments Downloader uzantısı kuruldu/güncellendi.');
 });
