@@ -4,12 +4,11 @@
  * @param  {Integer} duration time between each HTTP call
  */
 function processMultipleFilesDownload(urls, duration) { // Not used anymore
-  for(var i = 0; i < urls.length; i++) {
-    setTimeout(
-      (function(url) {
-        downloadAttachment(urls[i]);
-    })(urls[i]), duration);
-  }
+  urls.forEach(function(url, index) {
+    setTimeout(function() {
+      downloadAttachment(url);
+    }, index * duration);
+  });
 }
 
 
