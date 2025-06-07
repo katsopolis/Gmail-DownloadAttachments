@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Gmail - Attachments Downloader",
-  "short_name": "AttachmentsDownloade",
+  "short_name": "AttachmentsDownloader",
   "description": "__MSG_description__",
   "version": "0.8",
   "default_locale": "en",
